@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    background-color: #E5F6FF;
+    background-color: #f0f9fd;
     font-family: 'Noto Sans Georgian', sans-serif;
 }
 button{
@@ -32,7 +32,7 @@ nav {
 }
 nav a {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -48,7 +48,29 @@ main > div{
     background-color: #FAFAFA;
     border-radius: 25px;
     box-shadow: 5px 5px 9.1px rgba(0, 0, 0, 0.1);
+    border: solid 1px #dbdbdb;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
 }
+main > div h1{
+    color: #0A8ED9;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+main > div h2{
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 0;
+}
+main > div p{
+    color: #858585;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
 .input_container{ 
     height: 180px;
     display: flex;
@@ -95,4 +117,9 @@ main > div{
     padding: 0 20px;
     font-size: 15px;
     color: #858585;
+    border: solid 1px #dbdbdb;
+}
+
+#map{
+    border-radius: 20px;
 }

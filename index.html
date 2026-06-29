@@ -31,10 +31,24 @@
             <div class="line"></div>
             <div>
                 <h1>თქვენი ლოკაცია</h1>
-                <button>ნებართვა</button>
+                <button id="location_access">ნებართვა</button>
             </div>
         </div>
-        <div></div>
+        <div class="location">
+            <div class="text">
+                <h1>ლოკაცია</h1>
+                <h2>Name name</h2>
+                <p>41.6525, 44.9053</p>
+                <p>ფოსტის კოდი: 0000</p>
+            </div>
+            <iframe
+                src="https://maps.google.com/maps?q=0.0,0.0&z=15&output=embed"
+                width="400" height="400"
+                style="border:0"
+                allowfullscreen
+                id="map">
+            </iframe>
+        </div>
     </main>
 
     <footer></footer>
