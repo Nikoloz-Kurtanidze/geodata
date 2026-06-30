@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>GeoData</title>
 </head>
 <body>
     <header>
@@ -38,12 +38,12 @@
         <div class="location">
             <div class="text">
                 <h1>ლოკაცია</h1>
-                <h2 id="street_name">Name name</h2>
-                <p id="district_name">name name</p>
-                <p id="city_name">name</p>
-                <p id="country_name">name</p>
-                <p id="coordinates">41.6525, 44.9053</p>
-                <p id="postal_code">ფოსტის კოდი: 0000</p>
+                <h2 id="street_name"></h2>
+                <p id="district_name"></p>
+                <p id="city_name"></p>
+                <p id="country_name"></p>
+                <p id="coordinates"></p>
+                <p id="postal_code"></p>
             </div>
             <iframe
                 src="https://maps.google.com/maps?q=0.0,0.0&z=15&output=embed"
@@ -57,10 +57,10 @@
         <div class="country">
             <div class="text">
                 <h1>ქვეყანა</h1>
-                <h2 id="country_name">Name name</h2>
-                <p id="population">name name</p>
-                <p id="area">name</p>
-                <p id="capital">name</p>
+                <h2 id="country_name"></h2>
+                <p id="population"></p>
+                <p id="area"></p>
+                <p id="capital"></p>
                 <p id="country_code"></p>
                 <p id="calling_code"></p>
                 <p id="timezone"></p>
@@ -71,15 +71,23 @@
         <div class="city">
             <div class="text">
                 <h1>ქალაქი</h1>
-                <h2 id="country_name">Name name</h2>
-                <p id="population">name name</p>
-                <p id="area">name</p>
-                <p id="capital">name</p>
-                <p id="country_code"></p>
-                <p id="calling_code"></p>
-                <p id="timezone"></p>
+                <h2 id="city_name"></h2>
+                <p id="city_type"></p>
+                <p id="population"></p>
+                <p id="description"></p>
             </div>
             <img>
+        </div>
+
+        <div class="weather">
+            <div class="text">
+                <h1>ამინდი</h1>
+                <h2 id="temperature"></h2>
+                <p id="weather"></p>
+                <p id="time"></p>
+                <p id="windspeed"></p>
+            </div>
+            <p id="icon"></p>
         </div>
     </main>
 

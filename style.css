@@ -68,18 +68,18 @@ main > div h2{
     color: black;
     font-weight: bold;
     font-size: 24px;
-    margin: 30px 0 10px 0;
+    margin: 30px 0 20px 0;
 }
 main > div p{
     color: #858585;
     font-size: 16px;
-    margin: 5px 0;
+    margin: 8px 0;
 }
 main > div img{
     border-radius: 20px;
     border: solid 1px #dbdbdb;
     box-shadow: 5px 5px 9.1px rgba(0, 0, 0, 0.1);
-    width: 600px;
+    width: 300px;
     margin: auto;
 }
 main > div .text{
@@ -137,4 +137,8 @@ main > div .text{
 
 #map{
     border-radius: 20px;
+}
+.weather #icon{
+    font-size: 200px;
+    margin-right: 30px;
 }
