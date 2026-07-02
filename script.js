@@ -98,7 +98,7 @@ async function updateCountry() {
 
 async function updateCity() {
      try {
-        const response = await fetch(`http://api.geonames.org/searchJSON?q=${city}&maxRows=1&username=nika1`)
+        const response = await fetch(`https://secure.geonames.org/searchJSON?q=${city}&maxRows=1&username=nika1`)
         const json = await response.json()
         const data = json.geonames[0]
         console.log(data)
