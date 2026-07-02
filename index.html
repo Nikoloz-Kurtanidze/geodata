@@ -10,23 +10,33 @@
 <body>
     <header>
         <nav>
-            <a>ლოკაცია</a>
-            <a>ქვეყანა</a>
-            <a>ქალაქი</a>
+            <a onclick="scrollToSection('.location')">ლოკაცია</a>
+            <a onclick="scrollToSection('.country')">ქვეყანა</a>
+            <a onclick="scrollToSection('.city')">ქალაქი</a>
         </nav>
         <h1 class="logo">GeoData</h1>
         <nav>
-            <a>ამინდი</a>
-            <a>ინფორმაცია</a>
-            <a>სხვა</a>
+            <a onclick="scrollToSection('.weather')">ამინდი</a>
+            <a onclick="scrollToSection('.information')">ინფორმაცია</a>
+            <a onclick="scrollToSection('footer')">წყაროები</a>
         </nav>
+        <img src="images/menu-bar.png" class="menu_icon">
     </header>
+
+    <div class="hidden_menu">
+        <a onclick="scrollToSection('.location')">ლოკაცია</a>
+        <a onclick="scrollToSection('.country')">ქვეყანა</a>
+        <a onclick="scrollToSection('.city')">ქალაქი</a>
+        <a onclick="scrollToSection('.weather')">ამინდი</a>
+        <a onclick="scrollToSection('.information')">ინფორმაცია</a>
+        <a onclick="scrollToSection('footer')">წყაროები</a>
+    </div>
 
     <main>
         <div class="input_container">
             <div>
                 <h1>შეიყვანეთ ადგილი</h1>
-                <input type="text">
+                <input type="text" id="text_input">
             </div>
             <div class="line"></div>
             <div>
@@ -84,14 +94,34 @@
                 <h1>ამინდი</h1>
                 <h2 id="temperature"></h2>
                 <p id="weather"></p>
-                <p id="time"></p>
                 <p id="windspeed"></p>
+                <p id="winddirection"></p>
             </div>
             <p id="icon"></p>
         </div>
+
+        <div class="information">
+            <div class="text">
+                <h1>დამატებითი ინფორმაცია</h1>
+                <h2 id="elevation"></h2>
+                <h2>ჰაერის ხარისხი: </h2>
+                <p id="co"></p>
+                <p id="aqi"></p>
+                <p id="nd"></p>
+                <p id="ozone"></p>
+                <p id="pm10"></p>
+                <p id="pm2_5"></p>
+            </div>
+        </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <p>ინფორმაცია მოპოვებულია შემდეგი წყაროებიდან: Nominatim (OpenStreetMap), countries.dev, GeoNames, Wikipedia REST API, Open-Meteo Forecast and Open-Meteo Air Quality.</p>
+    </footer>
+
+    <button class="scroll_btn">
+        <img src="images/arrow.png">
+    </button>
 
     <script src="script.js"></script>
 </body>
